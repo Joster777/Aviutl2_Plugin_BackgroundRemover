@@ -1,0 +1,64 @@
+AIオブジェクトマスク (ObjectMask) - サードパーティのライセンス表示
+======================================================================
+
+このプラグインには、以下のソフトウェア・モデルが含まれる、または使用されています。
+それぞれのライセンス全文は、同じフォルダの該当ファイルを参照してください。
+
+
+1. SAM 2 (Segment Anything Model 2)
+----------------------------------------------------------------------
+  著作権者  : Meta Platforms, Inc. and affiliates
+  ライセンス : Apache License, Version 2.0  (LICENSE-SAM2.txt)
+  配布元    : https://github.com/facebookresearch/sam2
+
+  同梱ファイル:
+    models\sam2_encoder.onnx
+    models\sam2_decoder.onnx
+
+  [改変の表示 / Statement of changes]
+  上記の2ファイルは、Meta が公開している SAM 2 のモデルを、ONNX 形式に
+  変換したものです。変換にあたり、モデルをエンコーダとデコーダに分割しています。
+  変換元のモデル: SAM 2 (sam2_hiera_large)    ※同梱したモデルに合わせて修正
+  These files are SAM 2 model weights converted to the ONNX format and
+  split into an encoder and a decoder. The conversion is a modification
+  of the original work.
+
+  [変換済みモデルの入手元 / ONNX conversion]
+  ONNX 形式のモデルは、次のプロジェクトで公開されているものを使用しています:
+    ONNX-SAM2-Segment-Anything (release 0.2.0)
+    https://github.com/ibaiGorordo/ONNX-SAM2-Segment-Anything
+    Copyright (c) 2024 Ibai Gorordo
+    ライセンス: MIT License  (LICENSE-ONNX-SAM2-Segment-Anything.txt)
+
+  本プラグインは Meta Platforms, Inc. が作成・承認・推奨するものではありません。
+  This plugin is not created, endorsed, or sponsored by Meta Platforms, Inc.
+
+
+2. ONNX Runtime
+----------------------------------------------------------------------
+  著作権者  : Microsoft Corporation
+  ライセンス : MIT License  (LICENSE-ONNXRuntime.txt)
+  配布元    : https://github.com/microsoft/onnxruntime
+
+  同梱ファイル:
+    onnxruntime.dll (ほか ONNX Runtime 関連のDLL)
+
+  ※ ONNX Runtime のパッケージに ThirdPartyNotices.txt が含まれている場合は、
+    このフォルダに一緒に入れてください (ONNX Runtime 自体が利用する
+    第三者ソフトウェアの表示が記載されています)。
+
+
+3. DirectML
+----------------------------------------------------------------------
+  著作権者  : Microsoft Corporation
+  ライセンス : DirectML.dll を入手したパッケージ付属のライセンス
+  同梱ファイル:
+    DirectML.dll
+
+  ※ 入手したパッケージ (例: Microsoft.AI.DirectML) に含まれる
+    ライセンス文書を、このフォルダにコピーしてください。
+    再配布が許されているかは、そのライセンスで確認してください。
+
+
+----------------------------------------------------------------------
+上記のライセンスは、各ソフトウェア・モデルにのみ適用されます。
