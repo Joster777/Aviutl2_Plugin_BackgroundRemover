@@ -36,6 +36,7 @@
 Plugin\
  └ ObjectMask\
     ├ ObjectMask.aux2
+    ├ LICENSE.txt
     ├ onnxruntime.dll              (ほか ONNX Runtime 関連のDLL)
     ├ DirectML.dll                 (GPUで実行する場合)
     ├ licenses\                    (同梱物のライセンス文書)
@@ -147,13 +148,18 @@ Plugin\
 
 ---
 
-## 使用しているモデル・ライブラリとライセンス
+## ライセンス
+
+本プラグイン自体は **MIT License** です (`LICENSE.txt`)。
+
+### 使用しているモデル・ライブラリ
 
 本プラグインは、以下のモデル・ライブラリを使用・同梱しています。それぞれのライセンスに従います。同梱するライセンス文書は `licenses` フォルダを参照してください。
 
 | 名称 | 用途 | ライセンス |
 |---|---|---|
 | SAM 2 (Segment Anything Model 2) / Meta | 物体の検出 (`sam2_encoder.onnx` / `sam2_decoder.onnx` は、そのモデルを ONNX 形式に変換したもの) | Apache License 2.0 |
+| ONNX-SAM2-Segment-Anything / Ibai Gorordo | 変換済み ONNX モデルの入手元 | MIT License |
 | ONNX Runtime / Microsoft | モデルの実行 | MIT License |
 | DirectML / Microsoft | GPU での実行 | Microsoft の配布条件 |
 
